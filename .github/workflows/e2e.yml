@@ -1,0 +1,14 @@
+name: e2e
+on: [push, pull_request]
+jobs:
+
+  e2e:
+    name: End to End Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+      - name: Start the application
+        run: docker-compose up -d
+      - name: Render page
+        run: timeout 10 bash -c 'until curl -s localhost:8000/cgi-bin/cobol | grep COBOL > /dev/null; do sleep 1; done'
