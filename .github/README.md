@@ -24,5 +24,7 @@ This will build and run the application. Once the build
 is done the application will be accessible on 
 http://localhost:8000/cgi-bin/cobol
 
+![COBOL](cobol.png)
+
 Stay safe, stay home and enjoy _COBOL!_
 
