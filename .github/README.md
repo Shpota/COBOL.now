@@ -12,7 +12,7 @@ on a server, in a Kubernetes cluster, AWS, Azure,
 Raspberry Pi, whatever comes to your mind.
 
 # How to run
-In order to run this application you need to have
+In order to run this application, you need to have
 `Docker` and `docker-compose` on your machine (you
 don't have to have COBOL installed). Clone this
 repository and perform:
